@@ -54,6 +54,7 @@ for m=1:Nband
    
     plot(bandkpoints(seg*(l-1)+1:seg*l,:)*(cosi(l,:)).',Ef*ones(1,seg),'k--','Linewidth',2);
     hold on
+    ylim([min(min(bandenergies)) max(max(bandenergies))]);
     
 end
 
